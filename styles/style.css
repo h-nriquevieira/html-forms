@@ -1,0 +1,52 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 1rem;
+  background-color: #6C91C2;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  margin: 8px 0;
+}
+
+p + p,
+h2 + p,
+h2,
+button,
+form + p {
+  margin-top: 8px;
+}
+
+form {
+  background-color: #C3C9E9;
+  padding: .5rem;
+  margin-top: .5rem;
+  border-radius: 15px;
+  color: #373F47;
+  display: flex;
+  flex-direction: column;
+}
+
+form p {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+}
+
+form + p {
+  text-align: center;
+}
+
+button {
+  width: 200px;
+}
