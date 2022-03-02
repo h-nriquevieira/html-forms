@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Smooch+Sans:wght@200;300;400;500;600;700&display=swap');
+
 html {
   box-sizing: border-box;
 }
@@ -9,30 +11,44 @@ html {
 }
 
 body {
-  padding: 1rem;
-  background-color: #6C91C2;
-  color: white;
+  background-color: #3A3335;
+  color: #E3E4DB;
+  padding: .5rem;
+  font-family: 'Smooch Sans', Arial, Helvetica, sans-serif;
 }
 
 h1 {
   text-align: center;
   margin: 8px 0;
+  font-family: 'League Gothic', Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  letter-spacing: .2rem;
+  line-height: 3rem;
+}
+
+h2 {
+  font-size: 1.9rem;
 }
 
 p + p,
 h2 + p,
 h2,
 button,
-form + p {
+form + p,
+button {
   margin-top: 8px;
 }
 
+p {
+  font-size: 1.3rem;
+}
+
 form {
-  background-color: #C3C9E9;
-  padding: .5rem;
+  padding: 1rem;
   margin-top: .5rem;
-  border-radius: 15px;
-  color: #373F47;
+  background-color: #F6F7F8;
+  color: #3A3335;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
 }
@@ -40,7 +56,6 @@ form {
 form p {
   display: flex;
   flex-direction: column;
-  max-width: 200px;
 }
 
 form + p {
@@ -48,5 +63,94 @@ form + p {
 }
 
 button {
-  width: 200px;
+  -webkit-appearance: none;
+  padding: .5rem;
+  margin-top: 12px;
+  font-family: 'Smooch Sans', Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: .12rem;
+  background-color: #F28F3B;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+}
+
+input {
+  appearance: none;
+  padding: .5rem;
+  font-size: 1.2rem;
+  font-family: 'Smooch Sans', Arial, Helvetica, sans-serif;
+  min-width: 100%;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+
+
+
+input:active,
+input:focus {
+  border: 1px solid #F28F3B;
+  outline: none;
+}
+
+a {
+  color: #F28F3B;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #C8553D;
+}
+
+@media screen and (min-width: 600px) {
+  form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 4rem;
+  }
+ 
+  form h2 {
+    width: 100%;
+  }
+
+  form p {
+    width: 40%;
+  }
+
+  button {
+    width: calc(80% + 4rem);
+  }
+}
+
+@media screen and (min-width: 840px) {
+  body {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  header {
+    min-width: 40%;
+    max-width: 576px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2rem;
+    padding: 2rem 0;
+    max-width: 864px;
+  }
+
 }
