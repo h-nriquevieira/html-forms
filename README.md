@@ -1,4 +1,4 @@
-# odin-form
+# html-forms
 
 [Live demo](https://h-nriquevieira.github.io/html-forms/)
 
